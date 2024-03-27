@@ -49,33 +49,29 @@ public class LCD {
         else {this.brightness = brightness;}
     }
 
-    public void setCable(int cable) {
-        switch (cable) {
-            case 0:
+    public void setCable(int port) {
+        switch (port) {
+            case 1:
                 this.cable = "VGA";
                 break;
-            case 1:
+            case 2:
                 this.cable = "HDMI";
                 break;
-            case 2:
-                this.cable = "DVI";
-                break;
             case 3:
-                this.cable = "DisplayPort";
+                this.cable = "USB";
                 break;
             case 4:
-                this.cable = "USB-C";
+                this.cable = "DVI";
                 break;
             case 5:
-                this.cable = "Wireless";
+                this.cable = "DisplayPort";
                 break;
             default:
-                setCable(cable % 6);
                 break;
         }
     }
 
-    public void displayMessage() {
+    public void showStatus() {
         System.out.println("LCD Status  : " + this.status);
         System.out.println("Volume      : " + this.volume);
         System.out.println("Brightness  : " + this.brightness);
