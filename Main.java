@@ -7,7 +7,6 @@ public class Main {
         lcd.brightnessUp();
         lcd.brightnessUp();
         lcd.brightnessUp();
-        lcd.brightnessUp();
         lcd.displayMessage();
 
     }
