@@ -78,4 +78,11 @@ public class LCD {
                 break;
         }
     }
+
+    public void displayMessage() {
+        System.out.println("LCD Status  : " + this.status);
+        System.out.println("Volume      : " + this.volume);
+        System.out.println("Brightness  : " + this.brightness);
+        System.out.println("Cable       : " + this.cable);
+    }
 }
