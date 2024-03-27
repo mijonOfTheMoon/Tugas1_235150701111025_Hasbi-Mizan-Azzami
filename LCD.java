@@ -18,39 +18,35 @@ public class LCD {
     }
 
     public void volumeUp() {
-        this.volume++;
+        if (this.volume == 100) {}
+        else {this.volume++;}
     }
 
     public void volumeDown() {
-        this.volume--;
+        if (this.volume == 0) {}
+        else {this.volume--;}
     }
 
     public void setVolume(int volume) {
-        if (volume < 0) {
-            this.volume = 0;
-        } else if (volume > 100) {
-            this.volume = 100;
-        } else {
-            this.volume = volume;
-        }
+        if (volume < 0) {}
+        else if (volume > 100) {this.volume = 100;}
+        else {this.volume = volume;}
     }
 
     public void brightnessUp() {
-        this.brightness++;
+        if (this.brightness == 100) {}
+        else {this.brightness++;}
     }
 
     public void brightnessDown() {
-        this.brightness--;
+        if (this.brightness == 0) {}
+        else {this.brightness--;}
     }
 
     public void setBrightness(int brightness) {
-        if (brightness < 0) {
-            this.brightness = 0;
-        } else if (brightness > 100) {
-            this.brightness = 100;
-        } else {
-            this.brightness = brightness;
-        }
+        if (brightness < 0) {}
+        else if (brightness > 100) {this.brightness = 100;}
+        else {this.brightness = brightness;}
     }
 
     public void setCable(int cable) {
