@@ -16,8 +16,6 @@ public class Main {
         lcd2.setCable(100);
 
         LCD lcd3 = new LCD();
-
-        System.out.println(lcd.brightness);
-
+        
     }
 }
