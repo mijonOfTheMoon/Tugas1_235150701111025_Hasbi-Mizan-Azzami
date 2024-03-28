@@ -1,9 +1,14 @@
 public class LCD {
     
-    private String status = "Mati";
+    private String status;
     private int volume;
     private int brightness;
-    private String cable = "Unplugged";
+    private String cable;
+
+    public LCD() {
+        this.status = "Mati";
+        this.cable = "Unplugged";
+    }
 
     public void turnOn() {
         this.status = "Menyala";

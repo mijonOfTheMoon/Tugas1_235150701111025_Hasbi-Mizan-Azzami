@@ -3,9 +3,11 @@ public class Main {
         
         LCD lcd = new LCD();
         lcd.turnOn();
-        lcd.setBrightness(66);
-        lcd.setVolume(33);
-        lcd.setCable(2);
+        lcd.setVolume(50);
+        lcd.volumeUp();
+        lcd.setBrightness(90);
+        lcd.brightnessDown();
+        lcd.setCable(1);
         lcd.showStatus();
 
     }
